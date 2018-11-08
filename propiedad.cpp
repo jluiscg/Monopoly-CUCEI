@@ -1,6 +1,6 @@
 #include <propiedad.h>
 
-Propiedad::Propiedad(int codigo,string nombre,int precio, int alquiler, int duenio){
+Propiedad::Propiedad(int codigo,QString nombre,int precio, int alquiler, int duenio){
     this->codigo=codigo;
     this->nombre=nombre;
     this->precio=precio;
@@ -16,10 +16,10 @@ void Propiedad::setCodigo(int codigo){
 int Propiedad::getCodigo(){
     return codigo;
 }
-void Propiedad::setNombre(string nombre){
+void Propiedad::setNombre(QString nombre){
     this->nombre=nombre;
 }
-string Propiedad::getNombre(){
+QString Propiedad::getNombre(){
     return nombre;
 }
 void Propiedad::setPrecio(int precio){
